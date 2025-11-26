@@ -24,7 +24,7 @@ use libmpv_sys::{
 };
 use std::collections::HashMap;
 use std::convert::From;
-use std::ffi::{c_void, CStr};
+use std::ffi::{c_char, c_void, CStr};
 use std::os::raw::c_int;
 use std::ptr;
 
