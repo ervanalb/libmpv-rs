@@ -19,20 +19,20 @@
 members = ["libmpv-sys"]
 
 [package]
-name = "libmpv"
+name = "radiance-libmpv"
 version = "2.0.1"
 edition = "2018"
-authors = ["ParadoxSpiral <paradoxspiral@riseup.net>"]
+authors = ["ParadoxSpiral <paradoxspiral@riseup.net>", "Eric Van Albert <eric@van.al>"]
 license = "LGPL-2.1"
 build = "build.rs"
 readme = "README.md"
-description = "Libmpv abstraction that's easy to use and can play next to all codecs and containers"
+description = "Libmpv abstraction that's easy to use and can play next to all codecs and containers (fork with OpenGL renderer hooks for Radiance)"
 repository = "https://github.com/ParadoxSpiral/libmpv-rs"
 keywords = ["media", "playback", "mpv", "libmpv"]
 
 
 [dependencies]
-libmpv-sys = { path = "libmpv-sys", version = "3.1.0" }
+libmpv-sys = { path = "libmpv-sys", version = "3.1.0", package = "radiance-libmpv-sys" }
 
 [dev-dependencies]
 crossbeam = "0.7"
